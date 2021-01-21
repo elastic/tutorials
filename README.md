@@ -1,2 +1,3 @@
-# showcase
-Tutorials for building various example demos
+# Tutorials
+
+Code snippets and examples for various tutorials

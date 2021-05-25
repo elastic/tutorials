@@ -11,8 +11,8 @@ class AppSearch {
   func getResults(searchTerm: String, completion: @escaping ([Result]) -> ()) {
     let searchObject: [String: Any] = ["query": searchTerm]
     let jsonSearchQuery = try? JSONSerialization.data(withJSONObject: searchObject)
-    let authenticationToken = "Bearer search-it42pp384t15ebg31hrwxa1c"
-    let appSearchURL = URL(string: "https://5f514e22b7a34842adbf7a18c4a5e1b3.ent-search.us-east4.gcp.elastic-cloud.com/api/as/v1/engines/movies/search")!
+    let authenticationToken = "my_authentication_token"
+    let appSearchURL = URL(string: "my_app_search_url")!
     var request = URLRequest(url: appSearchURL)
     request.httpMethod = "POST"
     request.setValue(authenticationToken, forHTTPHeaderField: "Authorization")

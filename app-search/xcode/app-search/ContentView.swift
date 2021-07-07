@@ -11,6 +11,7 @@ struct ContentView: View {
   @State var results: [Result] = []
   @State private var searchText = ""
   @State private var showCancelButton: Bool = false
+  private let TmdbApiKey = "my_tmdb_api_key"
   
   var body: some View {
     VStack(alignment: .leading) {
@@ -48,7 +49,7 @@ struct ContentView: View {
       List(results) { result in
         HStack {
           if result.posterPath.raw != nil {
-            let imageURL = "https://image.tmdb.org/t/p/w500" + result.posterPath.raw! + "?api_key=92ee0a3cd45a0aa36e74ab8279a612b2"
+            let imageURL = "https://image.tmdb.org/t/p/w500" + result.posterPath.raw! + "?api_key=" + TmdbApiKey
             AsyncImage(
               url: URL(string: imageURL)!,
               placeholder: { Text("Loading...")},

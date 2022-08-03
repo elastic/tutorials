@@ -1,3 +1,12 @@
+//
+//  AsyncImage.swift
+//  AsyncImage
+//
+//  Created by Vadym Bulavin on 2/13/20.
+//  Copyright © 2020 Vadym Bulavin. All rights reserved.
+//
+//  Source: https://github.com/V8tr/AsyncImage
+
 import Foundation
 import SwiftUI
 import UIKit
